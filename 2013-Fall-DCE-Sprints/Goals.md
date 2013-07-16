@@ -6,12 +6,11 @@ The [three V's of big data](http://en.wikipedia.org/wiki/Big_data#Definition) ar
 - Velocity: the speed of data in and out
 - Variety: the range of data types and sources
 
-An institutional repository for a research university has low velocity, medium to high volume, and high variety.
+The institutional repository of a research university has low velocity, medium to high volume, and high variety.
 Accommodating high data variety is critical to the success of an institutional repository.
-To make matters worse the range of data types and sources also varies from university to university.
 As such accommodating data variety should be a central tenant of institutional repository design.
 
-Every time we hear the question how can I deposit my article?
+We want to help faculty, staff, and students when they ask us: how can I deposit my article?
 my dataset?
 my presentation?
 my poster?
@@ -20,26 +19,32 @@ my video?
 my audio files?
 my master's thesis?
 my simulation?
-We need to have a clear answer.
+Our patrons have not been asking for a lot, just a place to preserve and share a wide variety of content.
+Once we have a foundation where we can accept, describe, preserve, and present a wide variety of content we can start adding more sophisticated capabilities to the repository ecosystem.
 
-They have not been asking for a lot, just a place to preserve and share a wide variety of content.
-So, rather than take a depth approach and focus our first release on ETD's or datasets our plan is to take a breadth approach and provide basic coverage of as many of the types above as fast as we can (and do it well).
+We would like to accommodate library collection development in addition to serving the needs of the broader campus community. 
+While management workflows for licensed and purchased content will have to wait until the self-deposits foundation is laid, library employees can also utilize the system to host collections of digital materials.
 
-We have more complex, sophisticated features on our list, but those will come later.
+## Components
+Building an extensible system is complicated.
+The encapsulation of and interfaces between functions and systems are critically important.
+Initially we believe that we will need to address the following:
 
-In order to start helping faculty, staff, and students preserve and provide access to articles, images, datasets, documents, videos, and audio files, we will build out basic self-deposit support for a wide variety of works.
+- Content Types
+- Workflow
+- User Management
+- Monitoring & Messaging
+- UI
+- Dissemination systems
+- Content Registry
 
-For large files this may include a non-web interface.
-We also hear many of the above questions from library collection developers as well.
-While management workflows for licensed and purchased content are largely deferred for a later phase, we envision library employees may also utilize the system to host collections of digital materials if supported by existing functionality.
-
+## Features
 - Support basic deposit, description, view, search, and access of the major types of formats and works (we call them Curation Concerns).
-- Works include theses, dissertations, articles, tabular datasets, posters, presentations, final projects, other (we can still provide preservation level support even if we cannot provide appropriate viewers yet)
-
+	- Works include theses, dissertations, articles, tabular datasets, posters, presentations, final projects, other (**we can still provide preservation level support even if we cannot provide appropriate viewers yet**)
 - Basic services for deposit, view, and search of images, videos, documents, audio files
 - Support format-specific workflows including ingestion, generation of access derivatives, access policies, and retention policies.
 - Provide basic user profiles
-- Allow user profiles to be linked to existing “sibling profiles” such as ORCID
+	- Allow user profiles to be linked to existing "sibling profiles" such as ORCID
 - Create a collection that contains a set of multiple types of works.
 - Collect metadata for all collections, profiles, works, and format types that are comprehensively indexed for searching.
 - Full-text indexing support for certain types of content
