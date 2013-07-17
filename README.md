@@ -11,15 +11,15 @@ The process will work something like this:
 2. Identify the components needed to fulfill the project needs.
 3. Create epic-level feature descriptions for each component.
 4. Create story-level feature development for each epic.
-5. Write one or more test for each story.
+5. Write one or more tests for each story.
 6. Write code to make the tests work.
 
-1-2 will be present in this repo.
-3-4 will be documented as issues in the component repos.
+1-2 will be present in this repo.  
+3-4 will be documented as issues in the component repos.  
 5-6 will be contained in the components repos themselves as they are the actual deliverables of this process.
 
 ## Conventions
-The documents themselves will be in [github-flavored markdown][1].
+The documents themselves should be written in [github-flavored markdown][1].
 That way they will be rendered as web pages by github itself.
 This also allow in-browser edits to be made by those who aren't comfortable the full git toolchain.
 
