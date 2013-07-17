@@ -14,9 +14,9 @@ The process will work something like this:
 5. Write one or more tests for each story.
 6. Write code to make the tests work.
 
-1-2 will be present in this repo.  
-3-4 will be documented as issues in the component repos.  
-5-6 will be contained in the components repos themselves as they are the actual deliverables of this process.
+1--2 will be present in this repo.  
+3--4 will be documented as issues in the component repos.  
+5--6 will be contained in the components repos themselves as they are the actual deliverables of this process.
 
 ## Conventions
 The documents themselves should be written in [github-flavored markdown][1].
