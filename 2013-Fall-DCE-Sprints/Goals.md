@@ -30,13 +30,13 @@ Building an extensible system is complicated.
 The encapsulation of and interfaces between functions and systems are critically important.
 Initially we believe that we will need to address the following:
 
-- Content Types
-- Workflow
-- User Management
-- Monitoring & Messaging
-- UI
+- User management
+- Content types
+  - Content type registry
+- Monitoring & event messaging
+- Authority management
+- Mediation channels
 - Dissemination systems
-- Content Registry
 
 ## Features
 - Support basic deposit, description, view, search, and access of the major types of formats and works (we call them Curation Concerns).
