@@ -51,7 +51,7 @@ We would also like the ability to create Curation Concerns that are tailored for
 ### Content Type Registry
 We want to have a single controller than handles the creation and management of items via Curation Concerns.
 An actor or service will mediate the interaction between this controller and each type of Curation Concern.
-Doing it this way will reduce the overhead for adding new Curation Concerns and sharing them between implementations of Curate.
+This style of implementation reduces the overhead for adding new Curation Concerns as well as sharing Curation Concerns between different installations of the Curate framework.
 
 In order for this to function there needs to be a notion of a "type registry" for Curation Concerns.
 This registry provides a way for all the Curation Concerns in an application to stand up and be counted.
@@ -61,10 +61,38 @@ Because the registry is created at runtime you can add new Curation Concerns to 
 Each Curation Concern contains a presenter that takes the raw object and exposes a tidy representation of it ([Draper](https://github.com/drapergem/draper) is one way to do this).
 They also contain a form for editing the work---preferably built using [SimpleForm](https://github.com/plataformatec/simple_form).
 
-## Monitoring & Event Messaging
-Log activity  
-Conditional alerts  
-Notification engine
+## Activity Monitoring & Messaging
+We need a way of instrumenting actions performed while users interact with repository content.
+The resulting activity logs will allow us to measure user engagement with the repository.
+They will also allow us to provide detailed usage reports for individual depositors.
+Similarly the activity monitoring system will provide a mechanism for reporting on workflow state.
+
+This component will probably look something like [PublicActivity](https://github.com/pokonski/public_activity).
+The primary difference is that we need separate storage engines for watching (ActiveFedora) and logging (ActiveRecord) while PublicActivity assumes the storage engine will be the same for watching _and_ logging (both are ActiveRecord).
+The design may also take some cues from the Event system in 
+[sufia](https://github.com/projecthydra/sufia).
+
+Setting up Activity Monitoring will look something like:
+
+    ActivityEngine.config do |config|
+      config.register_activity(controller_name, action_name) do |controller, observed_object, current_user|
+        # Construct the message
+      end
+    end
+
+Ruby doesn't have a strict equivalent of an [interface in Java](http://en.wikipedia.org/wiki/Interface_(Java)).
+However, you _can_ test the API conformance of an object by using a Linter e.g. [ActiveModel::Lint::Test](http://api.rubyonrails.org/classes/ActiveModel/Lint/Tests.html).
+A Linter for the ActivityEngine would give us a way to codify the desired object interface.
+This makes Activity Monitoring available to any object that passes the tests present in our linting class (ActivityEngine::Lint::Test).
+
+The ActivityEngine will deliver:
+
+- A mountable, namespaced engine
+- `<%= render_activtiy_for %>`
+- `/?/activity/:object_class/:pid/all`
+- `/?/activity/:object_class/:pid/(?q=:q)`
+- authentication & authorization for route will be determined by the`:object_class` and `:pid`
+- `Activity.stats_for(object)`
 
 ## Authority Management
 We are building a graph.
@@ -75,7 +103,7 @@ This has implications for the construction of authority objects (like Person) an
 
 - Authority-backed controlled vocabularies stored by reference (URI, not string value)
 - Locally managed controlled vocabularies e.g. a list of programs of study for an ETD
-- Multiple unique identifiers for Authority Objects e.g. PID, ORCHID, Google Plus ID for a Person
+- Multiple unique identifiers for Authority Objects e.g. PID, ORCHID, and Google Plus ID for a Person
 
 ## Mediation Channels
 Mediation Channels are state machines that describe the processing of a work irrespective of its type.
@@ -83,7 +111,7 @@ A Curation Concern can have a default mediation channel.
 However, which Mediation Channel is presently applicable for a given work is determined by a Mediation Broker.
 This interaction could be implemented like this: 
 
-    MediationBroker.get_mediator_for(concern.user)
+    MediationBroker.get_mediator_for(concern.responsible_party)
 
 ## Dissemination Systems
 Capturing, describing, and preserving data is only half of the equation.
