@@ -134,7 +134,16 @@ Dissemination Systems should be able to be freely associated with Curation Conce
 This lays the foundation for providing a constellation of services that consume repository data.
 
 ### File Dissemination
-MIME Type
+Most files suitable for preservation do not make good access copies.
+The preservation files are either too large or have non-web-friendly MIME types.
+For both of these reasons we will need to build dissemination systems for different sets of file types:
+
+- Documents (Word, PDF, etc.)
+	- Generate a PDF from the original file
+	- Expose the PDF directly
+	- Present the content via a native web interface like the [DocumentCloud DocViewer](https://github.com/documentcloud/document-viewer)
+- [Images](http://www3.nd.edu/~dbrubak1/planning/building-an-image-pipeline/)
+- [Audio & Video](http://www.avalonmediasystem.org)
 
 ### Metadata Dissemination
 Citation generation  
