@@ -85,7 +85,7 @@ Setting up Activity Monitoring will look something like:
       end
     end
 
-Ruby doesn't have a strict equivalent of an [interface in Java](http://en.wikipedia.org/wiki/Interface_(Java)).
+Ruby doesn't have a strict equivalent of an [interface in Java](http://en.wikipedia.org/wiki/Interface_%28Java%29).
 However, you _can_ test the API conformance of an object by using a Linter e.g. [ActiveModel::Lint::Test](http://api.rubyonrails.org/classes/ActiveModel/Lint/Tests.html).
 A Linter for the ActivityEngine would give us a way to codify the desired object interface.
 This makes Activity Monitoring available to any object that passes the tests present in our linting class (ActivityEngine::Lint::Test).
