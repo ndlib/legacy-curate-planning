@@ -3,12 +3,12 @@
 These repo contain high-level functional and technical requirements related to the development of public-facing projects.
 This allows the development roadmap to be visible to all those with interest.
 
-## What gets put here?
+## The Process
 As the project life cycle progresses the documents in this repository may not continue to be the source or record for ongoing development.
 The process will work something like this:
 
 1. Articulate the purpose and technical goals of project as a whole.
-2. Identify the components needed to fulfill the project needs.
+2. Identify the components needed to fulfill the project requirements.
 3. Create epic-level feature descriptions for each component.
 4. Create story-level feature development for each epic.
 5. Write one or more tests for each story.
