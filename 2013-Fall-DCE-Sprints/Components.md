@@ -146,5 +146,18 @@ For both of these reasons we will need to build dissemination systems for differ
 - [Audio & Video](http://www.avalonmediasystem.org)
 
 ### Metadata Dissemination
-Citation generation  
-Display medium (accepts headers)
+We want the metadata schema and templates for the works being deposited in the IR to be as descriptive as possible.
+This is great for preservation and discovery purposes but we will also want more concise representations of this information.
+Each work should be able to be cast into other contexts like:
+
+- Citation generation
+- [Google Scholar tags](http://www.google.com/intl/en/scholar/inclusion.html#indexing)
+- [Schema.org](http://schema.org) attributes
+- [Twitter Cards](https://dev.twitter.com/docs/cards)
+
+There are also times when we want to return representations of a work in another format like:
+
+- XML
+- JSON
+- [collection+json](http://www.amundsen.com/media-types/collection/)
+- Hypermedia-compliant XHTML
