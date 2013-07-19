@@ -1,8 +1,16 @@
 # Curate Components
-Provide seams between functional concerns  
-Scale horizontally by adding components that share a common interface  
-Mountable Engine Pattern  
-Background Worker Pattern
+Curate is a Institutional Repository (IR) solution.
+It's goal is to accommodate a wide variety of data and metadata without forfeiting the ability to craft management and discovery experiences for very specific use cases.
+To that end the design of Curate will deliberately provide seams between functional concerns.
+This should allow the application to scale horizontally by adding components that share a common interface.
+
+We will be using three methods to ensure modularity and consistency between the components of Curate:
+
+- The Linter as Interface Pattern
+- The Mountable Engine Pattern
+- The Background Worker Pattern
+
+These three design conventions will be explained in more detail elsewhere.
 
 ## User Management
 User account management must negotiate the intersection between authentication, authorization, and authority control.
