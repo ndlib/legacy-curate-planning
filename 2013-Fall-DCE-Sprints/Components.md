@@ -57,9 +57,14 @@ In order for this to function there needs to be a notion of a "type registry" fo
 This registry provides a way for all the Curation Concerns in an application to stand up and be counted.
 Because the registry is created at runtime you can add new Curation Concerns to an application without having to alter the application code.
 
-### Presentation
-Each Curation Concern contains a presenter that takes the raw object and exposes a tidy representation of it ([Draper](https://github.com/drapergem/draper) is one way to do this).
-They also contain a form for editing the work---preferably built using [SimpleForm](https://github.com/plataformatec/simple_form).
+### Interface
+A CurationConcern should provide:
+
+- An "owner" or responsible party (`#responsible_party`) e.g. `User`, `Group`, `#notifiable`
+- A presenter that takes the raw object and exposes a tidy representation of it ([Draper](https://github.com/drapergem/draper) is one way to do this).
+- A form builder (or view partial) for each mode of interaction (new, edit, review, etc.). View partials are preferably built using [SimpleForm](https://github.com/plataformatec/simple_form).
+- A Workflow Mediator (this can return `nil` if there aren't any workflow states)
+- A Dissemination Mediator (the simplest implementation can just return the object itself)
 
 ## Activity Monitoring & Messaging
 We need a way of instrumenting actions performed while users interact with repository content.
@@ -85,6 +90,7 @@ However, you _can_ test the API conformance of an object by using a Linter e.g. 
 A Linter for the ActivityEngine would give us a way to codify the desired object interface.
 This makes Activity Monitoring available to any object that passes the tests present in our linting class (ActivityEngine::Lint::Test).
 
+### Interface
 The ActivityEngine will deliver:
 
 - A mountable, namespaced engine
