@@ -1,6 +1,12 @@
 # Curate Components
+Provide seams between functional concerns
+Scale horizontally by adding components that share a common interface
+Mountable Engine Pattern
+Background Worker Pattern
 
 ## User Management
+Authentication system negotiation
+Relationship with Person Object
 
 ## Content Types
 We want to accommodate the deposit, description, preservation, and dissemination of a wide variety of data.
@@ -27,8 +33,14 @@ Each Curation Concern contains a presenter that takes the raw object and exposes
 They also contain a form for editing the work---preferably built using [SimpleForm](https://github.com/plataformatec/simple_form).
 
 ## Monitoring & Event Messaging
+Log activity
+Conditional alerts
+Notification engine
 
 ## Authority Management
+Controlled Vocabulary Support
+- Authority Controlled
+- Locally Managed
 
 ## Mediation Channels
 Mediation Channels are state machines that describe the processing of a work irrespective of its type.
@@ -39,7 +51,14 @@ This interaction could be implemented like this:
     MediationBroker.get_mediator_for(concern.user)
 
 ## Dissemination Systems
+Capturing, describing, and preserving data is only half of the equation.
+Leveraging the data and metadata present in an IDR is central to the value proposition of the entire system.
+Dissemination Systems should be able to be freely associated with Curation Concerns.
+This lays the foundation for providing a constellation of services that consume repository data.
 
 ### File Dissemination
+MIME Type
 
 ### Metadata Dissemination
+Citation generation
+Display medium (accepts headers)
