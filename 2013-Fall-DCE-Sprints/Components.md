@@ -117,7 +117,7 @@ This has implications for the construction of authority objects (like Person) an
 
 - Authority-backed controlled vocabularies stored by reference (URI, not string value)
 - Locally managed controlled vocabularies e.g. a list of programs of study for an ETD
-- Multiple unique identifiers for Authority Objects e.g. PID, ORCHID, and Google Plus ID for a Person
+- Multiple unique identifiers for Authority Objects e.g. PID, ORCID, and Google Plus ID for a Person
 
 ## Mediation Channels
 Mediation Channels are state machines that describe the processing of a work irrespective of its type.
