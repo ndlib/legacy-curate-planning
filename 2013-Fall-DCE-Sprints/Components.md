@@ -74,7 +74,7 @@ A CurationConcern should provide:
 - A Workflow Mediator (this can return `nil` if there aren't any workflow states)
 - A Dissemination Mediator (the simplest implementation can just return the object itself)
 
-## [Activity Monitoring & Messaging](https://github.com/ndlib/satchel)
+## [Activity Monitoring & Messaging](https://github.com/ndlib/activity_engine)
 We need a way of instrumenting actions performed while users interact with repository content.
 The resulting activity logs will allow us to measure user engagement with the repository.
 They will also allow us to provide detailed usage reports for individual depositors.
