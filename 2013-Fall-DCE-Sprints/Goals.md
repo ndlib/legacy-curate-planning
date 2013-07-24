@@ -25,7 +25,14 @@ Once we have a foundation where we can accept, describe, preserve, and present a
 We would like to accommodate library collection development in addition to serving the needs of the broader campus community. 
 While management workflows for licensed and purchased content will have to wait until the self-deposits foundation is laid, library employees can also utilize the system to host collections of digital materials.
 
-## Components
+## Towards and Extensible Architecture
+We want this IR solution to be easy to theme, customize, and extend.
+That said Curate, much like [Blacklight](http://projectblacklight.org), is meant to be a developer-friendly framework -- not a turn-key solution.
+
+The core of the IR functionality is contained in the "[curate](https://github.com/ndlib/curate)" gem.
+[CurateND](https://github.com/ndlib/curate_nd) is a reference implementation of a full IR solution. 
+
+### Components
 Building an extensible system is complicated.
 The encapsulation of and interfaces between functions and systems are critically important.
 Initially we believe that we will need to address the following:
