@@ -113,10 +113,12 @@ We are building a graph.
 We are building it bigger.[*](http://en.wikipedia.org/wiki/Comfort_Eagle)
 
 In order to maintain the referential integrity of the graph we need good authority control.
-This has implications for the construction of authority objects (like Person) and for controlled vocabularies present in our metadata editing interfaces. At the very least we will need to support:
+This has implications for the construction of authority objects (like Person) and for controlled vocabularies present in our metadata editing interfaces.
+At the very least we will need to support:
 
 - Authority-backed controlled vocabularies stored by reference (URI, not string value)
 - Locally managed controlled vocabularies e.g. a list of programs of study for an ETD
+- Querying external vocabulary endpoints e.g. VIAF
 - Multiple unique identifiers for Authority Objects e.g. PID, ORCID, and Google Plus ID for a Person
 
 ## Mediation Channels
