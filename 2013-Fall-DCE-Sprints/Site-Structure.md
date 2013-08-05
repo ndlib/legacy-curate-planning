@@ -75,19 +75,74 @@ CurateND only has need for CAS integration during the first phase of development
 ## Mediation
 - Notify both sending and receiving parties on state change
 - Allow for changes in authorization based on item state
-	- (Can a non-owner alter an item? Probably not.)
+	- (Can a non-owner alter an item? Probably not; but they can make comments.)
 - Render form for state & concern
 	- ActionView lookup
 - Support "locked" state (only privileged users can alter it)
 
 ## Authority Management
+Controlled Vocabulary use cases:
+
+- Locally managed term lists e.g. list of programs of study for ETD submission maintained by a Curate user.
+- Fixed terminologies e.g. locally chosen list of Library of Congress subject headings
+- External services e.g. [VIAF](http://www.oclc.org/viaf.en.html)
+
+Fields should ask an AuthorityBroker where to get their information.
+
+There are two types of inputs:
+
+- Single term e.g. select box
+- Multiple term e.g. multi-select box wrapped with [chosen](https://github.com/harvesthq/chosen)
+
+Should we support extensible vocabularies? (No)  
+Can terms be used as a suggestion with a free-form input fallback? (No)  
+Are new terms are added to the global list? (No)
+
+When possible terms should be stored should be stored by _refernce_ (URI) not _value_ (string). Object presenters then have the option of passing the terms as URI's or their string values.
 
 ## Syndication
+When an item is marked as "done" (:complete) it _may_ be syndicated to another discovery or preservation system. Services providers include:
+
+- Primo
+- Google Scholar
+- APTrust
+
+Who chooses where it goes?
+- Each curation concern has knowledge of its possible syndication channels
+- The Owner of the object can opt-out of any or all syndication channels before the object is :complete.
+
+There should be a way to edit object syndication preferences:
+
+- on a per-item basis
+- in bulk
+
+## Content Identifiers
+- PID
+- DOI
+- ARK
 
 ## PURL Service
+A "short URL" style service would be nice.
 
 ## File Dissemination
+- Document conversion e.g. to PDF
+- Presentation derivatives e.g. image crops 
+- Bags/BagIt export (not a priority)
 
 ## Metadata Dissemination
+Crosswalk item metadata to other formats:
+
+- DC:XML
+- JSON+collection (or other hypermedia content types)
+
+External service integration:
+
+- [schema.org](http://schema.org) microdata
+- Google Scholar meta tags
+- Twitter cards
 
 ## API Design
+Hypothesis: it would be cleaner to build a rich API in Curate that supports the development of client applications than to make many applications that talk to the same Fedora and Solr instances directly.
+
+Dan has [written some about this](http://www3.nd.edu/~dbrubak1/planning/a-serviceable-digital-repository/).
+There are still a lot of unanswered questions --- the proposed solution may just be moving complexity around rather than making the entire system better.
