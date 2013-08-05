@@ -100,6 +100,14 @@ Are new terms are added to the global list? (No)
 
 When possible terms should be stored should be stored by _refernce_ (URI) not _value_ (string). Object presenters then have the option of passing the terms as URI's or their string values.
 
+## Content Identifiers
+- PID (default)
+- DOI (already implemented)
+- ARK (optional)
+
+### PURL Service
+A "short URL" style service would be nice.
+
 ## Syndication
 When an item is marked as "done" (:complete) it _may_ be syndicated to another discovery or preservation system. Services providers include:
 
@@ -116,14 +124,6 @@ There should be a way to edit object syndication preferences:
 - on a per-item basis
 - in bulk
 
-## Content Identifiers
-- PID
-- DOI
-- ARK
-
-### PURL Service
-A "short URL" style service would be nice.
-
 ## File Dissemination
 - Document conversion e.g. to PDF
 - Presentation derivatives e.g. image crops 
@@ -134,12 +134,37 @@ Crosswalk item metadata to other formats:
 
 - DC:XML
 - [Collection+JSON](http://amundsen.com/media-types/collection/), [DocJSON](https://github.com/docjson/docjson), or other hypermedia content types
+- Citation generation
 
 External service integration:
 
 - [schema.org](http://schema.org) microdata
 - Google Scholar meta tags
 - Twitter cards
+
+## Scholarly Use
+### Citation
+Common citation formats should be supported via metadata dissemination (or possibly the existing Blacklight helpers).
+
+### Annotation
+Annotation can be more sophisticated than just item-level comments.  
+Rich annotation tools may be more appropriate for stand-alone applications than Curate proper.
+
+- Annotations should be persisted in Fedora. (Right?)
+- Access permissions for annotations must be equivalent or _more_ restrictive than those of the subject.
+
+### Arrangement
+There are two types of "collections" used by Curate.
+
+- Containers or "administrative collections" that bind together objects that can be considered a single unit e.g. a metadata record and two file records.
+- Collections or "intellectual arrangements" are user-created groupings based on some theme, concept, or arbitrary criteria.
+
+Containers are first-order collections whose existence should be largely transparent to the end-user.
+
+Collections are essentially an arbitrary arrangement of the material.
+Items can be in any order.
+Collections can support hierarchical arrangement.
+Collections cannot contain other Collections.
 
 ## API Design
 Hypothesis: it would be cleaner to build a rich API in Curate that supports the development of client applications than to make many applications that talk to the same Fedora and Solr instances directly.
