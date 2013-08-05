@@ -121,7 +121,7 @@ There should be a way to edit object syndication preferences:
 - DOI
 - ARK
 
-## PURL Service
+### PURL Service
 A "short URL" style service would be nice.
 
 ## File Dissemination
@@ -133,7 +133,7 @@ A "short URL" style service would be nice.
 Crosswalk item metadata to other formats:
 
 - DC:XML
-- JSON+collection (or other hypermedia content types)
+- [Collection+JSON](http://amundsen.com/media-types/collection/), [DocJSON](https://github.com/docjson/docjson), or other hypermedia content types
 
 External service integration:
 
@@ -146,3 +146,6 @@ Hypothesis: it would be cleaner to build a rich API in Curate that supports the 
 
 Dan has [written some about this](http://www3.nd.edu/~dbrubak1/planning/a-serviceable-digital-repository/).
 There are still a lot of unanswered questions --- the proposed solution may just be moving complexity around rather than making the entire system better.
+
+Implmentiaton employ something like [JSON API](http://jsonapi.org).
+
