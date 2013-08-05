@@ -83,9 +83,14 @@ CurateND only has need for CAS integration during the first phase of development
 ## Authority Management
 Controlled Vocabulary use cases:
 
+- Metadata enrichment
+- Search enhancement (synonym expansion)
+
+Types of vocabularies:
+
 - Locally managed term lists e.g. list of programs of study for ETD submission maintained by a Curate user.
 - Fixed terminologies e.g. locally chosen list of Library of Congress subject headings
-- External services e.g. [VIAF](http://www.oclc.org/viaf.en.html)
+- External services e.g. [VIAF](http://www.oclc.org/viaf.en.html), [CONA](http://www.getty.edu/research/tools/vocabularies/cona/), [GeoNames](http://www.geonames.org)
 
 Fields should ask an AuthorityBroker where to get their information.
 
@@ -98,7 +103,8 @@ Should we support extensible vocabularies? (No)
 Can terms be used as a suggestion with a free-form input fallback? (No)  
 Are new terms are added to the global list? (No)
 
-When possible terms should be stored should be stored by _refernce_ (URI) not _value_ (string). Object presenters then have the option of passing the terms as URI's or their string values.
+When possible terms should be stored should be stored by _refernce_ (URI) not _value_ (string).
+Object presenters then have the option of passing the terms as URI's or their string values.
 
 ## Content Identifiers
 - PID (default)
