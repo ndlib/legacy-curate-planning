@@ -161,10 +161,11 @@ Rich annotation tools may be more appropriate for stand-alone applications than 
 - Access permissions for annotations must be equivalent or _more_ restrictive than those of the subject.
 
 ### Arrangement
-There are two types of "collections" used by Curate.
+There are three types of "collections" used by Curate.
 
 - Containers or "administrative collections" that bind together objects that can be considered a single unit e.g. a metadata record and two file records.
 - Collections or "intellectual arrangements" are user-created groupings based on some theme, concept, or arbitrary criteria.
+- Projects contain a working set of Containers or Items that supports ongoing research
 
 Containers are first-order collections whose existence should be largely transparent to the end-user.
 
@@ -176,6 +177,9 @@ Collections have several characteristics:
 - Items are presented in an user-sortable list.
 - Collections can link to other Collections.
 - Collections can be presented in different ways e.g. list, gallery.
+- A Collection can choose _one_ item to provide "representive media" for the collection e.g. image, video
+
+Collections should adopt or adapt [Sufia's](https://github.com/projecthydra/sufia) notion of a Collection.
 
 ## API Design
 Hypothesis: it would be cleaner to build a rich API in Curate that supports the development of client applications than to make many applications that talk to the same Fedora and Solr instances directly.
