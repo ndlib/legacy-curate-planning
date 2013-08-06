@@ -115,7 +115,8 @@ Object presenters then have the option of passing the terms as URI's or their st
 A "short URL" style service would be nice.
 
 ## Syndication
-When an item is marked as "done" (:complete) it _may_ be syndicated to another discovery or preservation system. Services providers include:
+When an item is marked as "done" (:complete) it _may_ be syndicated to another discovery or preservation system.
+Services providers include:
 
 - Primo
 - Google Scholar
@@ -168,9 +169,13 @@ There are two types of "collections" used by Curate.
 Containers are first-order collections whose existence should be largely transparent to the end-user.
 
 Collections are essentially an arbitrary arrangement of the material.
-Items can be in any order.
-Collections can support hierarchical arrangement.
-Collections cannot contain other Collections.
+An Annotation defines the relationship between a Collection and the Items in that collection.
+An Annotation and a Collection have basically the same metadata but an Annotation is a leaf and a Collection is a node.
+Collections have several characteristics:
+
+- Items are presented in an user-sortable list.
+- Collections can link to other Collections.
+- Collections can be presented in different ways e.g. list, gallery.
 
 ## API Design
 Hypothesis: it would be cleaner to build a rich API in Curate that supports the development of client applications than to make many applications that talk to the same Fedora and Solr instances directly.
@@ -178,5 +183,5 @@ Hypothesis: it would be cleaner to build a rich API in Curate that supports the 
 Dan has [written some about this](http://www3.nd.edu/~dbrubak1/planning/a-serviceable-digital-repository/).
 There are still a lot of unanswered questions --- the proposed solution may just be moving complexity around rather than making the entire system better.
 
-Implmentiaton employ something like [JSON API](http://jsonapi.org).
+API implmentiaton should employ something like [JSON API](http://jsonapi.org).
 
