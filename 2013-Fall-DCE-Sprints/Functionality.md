@@ -27,6 +27,8 @@ We need a role-based authorization system.
 Something based on [cancan](https://github.com/ryanb/cancan) is fine.
 
 ## User Profile
+See also the [profile wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Profile-Notes.md).
+
 - Add authentication mechanisms
 - Add personal identifiers e.g. ORCID, google plus
 	- Validate identities via OAuth with the external services
@@ -37,6 +39,8 @@ Something based on [cancan](https://github.com/ryanb/cancan) is fine.
 - Manage account delegation
 
 ## Dashboard
+See also the [dashboard wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Dashboard-Notes.md).
+
 - Submit a Work
 - Search
 - About
@@ -47,7 +51,6 @@ Something based on [cancan](https://github.com/ryanb/cancan) is fine.
 	- My Activity
 	- My Notifications
 
-## Activity & Notifications
 ### My Activity (What's happening?)
 - What have I done?
 	- Search actions
@@ -134,28 +137,38 @@ There should be a way to edit object syndication preferences:
 - Bags/BagIt export (not a priority)
 
 ## Metadata Dissemination
-Crosswalk item metadata to other formats:
+See also the [show wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Show-Notes.md).
+
+Metadata Dissemination encompasses any presentation of an item's metadata.
+Rendering the HTML representation of an item is a common form of Metadata Dissemination.
+We need a flexible system for casting metadata into other formats such as:
 
 - DC:XML
 - [Collection+JSON](http://amundsen.com/media-types/collection/), [DocJSON](https://github.com/docjson/docjson), or other hypermedia content types
-- Citation generation
+- Various styles of citation
 
-External service integration:
+External services also rely on specific aspects of an item's metadata:
 
-- [schema.org](http://schema.org) microdata
-- Google Scholar meta tags
-- Twitter cards
+- [Google rich snippets](https://support.google.com/webmasters/answer/2722261?hl=en) via [schema.org](http://schema.org) microdata
+- [Google Scholar meta tags](http://www.google.com/intl/en/scholar/inclusion.html) ([unofficial guide](http://www.monperrus.net/martin/accurate+bibliographic+metadata+and+google+scholar))
+- [Twitter cards](https://dev.twitter.com/docs/cards)
+
+The naive solution is to create different view templates for every permutation of MIME type and Curation Concern.
+We think there may be a more elegant solution.
+Jeremy has created [Hydra::ObjectViewer](https://github.com/ndlib/hydra-object_viewer) as a prototype that leverages dependency injection and the presenter pattern to create a flexible and extensible system.
 
 ## Scholarly Use
 ### Citation
-Common citation formats should be supported via metadata dissemination (or possibly the existing Blacklight helpers).
+Common citation formats should be supported via [Metadata Dissemination](#metadata-dissemination) (or possibly the existing Blacklight helpers).
 
 ### Annotation
-Annotation can be more sophisticated than just item-level comments.  
-Rich annotation tools may be more appropriate for stand-alone applications than Curate proper.
+Annotation can be more sophisticated than just item-level comments.
+Annotations provide the binding between items and Collections.
 
-- Annotations should be persisted in Fedora. (Right?)
+- Annotations should be persisted in Fedora.
 - Access permissions for annotations must be equivalent or _more_ restrictive than those of the subject.
+
+Rich annotation tools may be more appropriate for stand-alone applications than Curate proper.
 
 ### Arrangement
 There are three types of "collections" used by Curate.
