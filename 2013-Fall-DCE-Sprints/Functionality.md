@@ -1,13 +1,6 @@
-# Site Structure
+# Curate Functionality
 
-## Home (/)
-- Login
-- Search
-- About
-- Contact
-- Report a Problem
-
-## Login (/login)
+## Authentication
 User session management will be managed with [devise](https://github.com/plataformatec/devise).
 
 [OmniAuth](https://github.com/intridea/omniauth) provides an API for multi-provider authentication and can be [used with devise](https://github.com/plataformatec/devise/wiki/OmniAuth:-Overview).
@@ -25,11 +18,15 @@ CurateND only has need for CAS integration during the first phase of development
 - Request an account
 - Account recovery
 
-## After Login
+### Post-Login Hooks
 - Accept terms of service (if required)
 - Prompt to update profile (if required)
 
-## Profile
+## Authorization
+We need a role-based authorization system.
+Something based on [cancan](https://github.com/ryanb/cancan) is fine.
+
+## User Profile
 - Add authentication mechanisms
 - Add personal identifiers e.g. ORCID, google plus
 	- Validate identities via OAuth with the external services
@@ -58,7 +55,7 @@ CurateND only has need for CAS integration during the first phase of development
 	- Graph actions
 - What are others doing with things I observe?
 	- The things I observe include but are not limited to works I have submitted
-	- Implied `observers` table with pid, class, user_id/user_pid, owner_pid
+	- Implied `observers` table with `pid`, `class`, `user_id`/`user_pid`, `owner_pid`
 	- Search usage
 	- Display usage as tabular data
 	- Graph usage
@@ -103,7 +100,7 @@ Should we support extensible vocabularies? (No)
 Can terms be used as a suggestion with a free-form input fallback? (No)  
 Are new terms are added to the global list? (No)
 
-When possible terms should be stored should be stored by _refernce_ (URI) not _value_ (string).
+When possible terms should be stored should be stored by _reference_ (URI) not _value_ (string).
 Object presenters then have the option of passing the terms as URI's or their string values.
 
 ## Content Identifiers
@@ -115,7 +112,7 @@ Object presenters then have the option of passing the terms as URI's or their st
 A "short URL" style service would be nice.
 
 ## Syndication
-When an item is marked as "done" (:complete) it _may_ be syndicated to another discovery or preservation system.
+When an item is marked as "done" (`:complete`) it _may_ be syndicated to another discovery or preservation system.
 Services providers include:
 
 - Primo
@@ -124,7 +121,7 @@ Services providers include:
 
 Who chooses where it goes?
 - Each curation concern has knowledge of its possible syndication channels
-- The Owner of the object can opt-out of any or all syndication channels before the object is :complete.
+- The Owner of the object can opt-out of any or all syndication channels before the object is `:complete`.
 
 There should be a way to edit object syndication preferences:
 
@@ -167,9 +164,14 @@ There are three types of "collections" used by Curate.
 - Collections or "intellectual arrangements" are user-created groupings based on some theme, concept, or arbitrary criteria.
 - Projects contain a working set of Containers or Items that supports ongoing research
 
-Containers are first-order collections whose existence should be largely transparent to the end-user.
+**Containers** are first-order collections whose existence should be largely transparent to the end-user.
+They decorate a group of repository objects with:
 
-Collections are essentially an arbitrary arrangement of the material.
+- A named context
+- A description
+- Additional metadata
+
+**Collections** are essentially an arbitrary arrangement of the material.
 An Annotation defines the relationship between a Collection and the Items in that collection.
 An Annotation and a Collection have basically the same metadata but an Annotation is a leaf and a Collection is a node.
 Collections have several characteristics:
@@ -177,9 +179,19 @@ Collections have several characteristics:
 - Items are presented in an user-sortable list.
 - Collections can link to other Collections.
 - Collections can be presented in different ways e.g. list, gallery.
-- A Collection can choose _one_ item to provide "representive media" for the collection e.g. image, video
+- A Collection can choose _one_ item to provide "representative media" for the collection e.g. image, video
 
 Collections should adopt or adapt [Sufia's](https://github.com/projecthydra/sufia) notion of a Collection.
+
+**Projects** will typically be composed of research-related materials.
+Projects in Curate exist to provide:
+
+- Long-term preservation of significant data and supporting files
+- Persistent identifiers, like DOIs, or PURLs to aid in citing research
+
+Curate is _not_ trying to replicate or replace the functionality of a "cloud storage" provider like [Box](https://www.box.com) or [Dropbox](https://www.dropbox.com).
+Curate is an auxiliary service that helps fulfill data management needs and aids in conventional publishing by facilitating citations.
+In the future it may provide an avenue for open-access publishing.
 
 ## API Design
 Hypothesis: it would be cleaner to build a rich API in Curate that supports the development of client applications than to make many applications that talk to the same Fedora and Solr instances directly.
@@ -187,5 +199,5 @@ Hypothesis: it would be cleaner to build a rich API in Curate that supports the 
 Dan has [written some about this](http://www3.nd.edu/~dbrubak1/planning/a-serviceable-digital-repository/).
 There are still a lot of unanswered questions --- the proposed solution may just be moving complexity around rather than making the entire system better.
 
-API implmentiaton should employ something like [JSON API](http://jsonapi.org).
+API implementation should employ something like [JSON API](http://jsonapi.org).
 
