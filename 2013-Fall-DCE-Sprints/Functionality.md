@@ -171,6 +171,9 @@ They decorate a group of repository objects with:
 - A description
 - Additional metadata
 
+The "named context" of a Container is called a Curation Concern.
+Curation Concerns provide hooks for workflow (e.g. mediated deposits, syndication approval) and inform how the content is presented.
+
 **Collections** are essentially an arbitrary arrangement of the material.
 An Annotation defines the relationship between a Collection and the Items in that collection.
 An Annotation and a Collection have basically the same metadata but an Annotation is a leaf and a Collection is a node.
@@ -200,4 +203,3 @@ Dan has [written some about this](http://www3.nd.edu/~dbrubak1/planning/a-servic
 There are still a lot of unanswered questions --- the proposed solution may just be moving complexity around rather than making the entire system better.
 
 API implementation should employ something like [JSON API](http://jsonapi.org).
-
