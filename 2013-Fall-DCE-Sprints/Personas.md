@@ -9,3 +9,6 @@ Who will use this thing?
 - Administrative Assistant
 - Journal Editor
 - Digitization Specialist
+
+Rick has a more detailed list based on interviews with actual prospective users.
+That list will be anonymized and presented here soon.
