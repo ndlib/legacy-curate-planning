@@ -13,7 +13,12 @@ Overarching Goal: Allow Deposit of Multiple Container Types; Before we can do an
 - Ability to deposit multipe types of **Containers**
 	- Given I am logged in, when I submit a valid form for a **Container**, then a **Container** and its **Content** are created.
 - Ability to search for **Containers**
+	- Given I am not logged in, and one **Container** is "Open Access", and one **Container** is "Private", when I search the IR, then I the "Private" **Container** will not be in the search results.
+
 - Ability to display contents of **Containers**
+	- Given I am not logged in, and a **Container** is "Private", when I go to that **Container**'s public URL, then I will see only a stub of the **Container**'s information.
+	- Given I logged in, and I created a "Private" **Container** , when I go to that **Container**'s public URL, then I will see the full information for the **Container**.
+
 
 # Week 2
 
