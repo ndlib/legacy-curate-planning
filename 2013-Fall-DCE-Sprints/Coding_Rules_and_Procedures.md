@@ -38,6 +38,6 @@ We will use the [Contributing Guidelines for Project Hydra][4] with the followin
 * A Pull Request must be reviewed and ultimately merged by a person that is not of the submitter's institution (i.e. Notre Dame cannot merge Notre Dame's work)
 
 [1]:http://robots.thoughtbot.com/post/50655960596/sandi-metz-rules-for-developers "Sandi Metz' Rules for Developers"
-[2]:https://github.com/organizations/projecthydra-2013-partner-sprints "A Temporary Github Organization"
+[2]:https://github.com/projecthydra-2013-partner-sprints "A Temporary Github Organization"
 [3]:https://github.com/projecthydra
-[4]: https://github.com/projecthydra/hydra/blob/master/CONTRIBUTING.md
+[4]:https://github.com/projecthydra/hydra/blob/master/CONTRIBUTING.md
