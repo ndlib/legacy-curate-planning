@@ -64,3 +64,4 @@ Initially we believe that we will need to address the following:
 - Be able to set levels of access on a per-item level to: private, campus only, embargoed, and public.
 - Access levels can vary within the hierarchy of a collection (e.g. a public collection may contain campus-only items. Those items would only be visible to people on campus but the rest would always be visible. )
 - Basic preservation standards, common metadata fields, and file format requirements enforced.
+- Preservation is a deferred decision; For now the IR is concerned with Access only
