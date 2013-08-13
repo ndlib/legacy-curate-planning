@@ -1,5 +1,7 @@
 # Week 1
 
+Overarching Goal: Allow Deposit of Multiple Container Types; Before we can do anything more we have to show that we can accept things.
+
 - Identify if we should be doing coding to Curate or Sufia; This will require reconciling the Glossary and Personas.
 - Define the interface for Container, Content, and Collection
 	- For data entry (via ActiveFedora::DelegateAttributes)
@@ -14,6 +16,8 @@
 - Ability to display contents of **Containers**
 
 # Week 2
+
+Overarching Goal: Record and Report the Activity that is happening; In doing this we can help highlight that things are happening.
 
 - Generate Activity Entries on a Collectible
 	- Given I am logged in, when I create a Container, then the IR will create an Activity Entry stating I created the Container.
