@@ -14,7 +14,7 @@
 
 **Collection** - It is a set of Collectibles; It has Access Controls defining which Accounts can add or remove Collectibles; It is Collectible; It contains Descriptive Metadata
 
-**Container** - Abstract; It contains Descriptive Metadata; A set of references to Content; (e.g. Senior Thesis is an implementation of a Container); It has Access Controls; It is Collectible
+**Container** - Abstract; It is an implementation of an intellectual work and contains Descriptive Metadata; A set of references to Content; (e.g. Senior Thesis is an implementation of a Container); It has Access Controls; It is Collectible
 
 **Content** - Abstract; Contains reference to something and metadata; Its encouraged that Content should belong an implementation of a Container; (i.e. Think of Content as a proton in physics; it prefers to be a part of something);  It is Collectible
 
@@ -23,6 +23,8 @@
 **Embedded Content** - Stores Files, derivatives, and Technical Metadata; It has Access Controls
 
 **Group** - A set of Accounts
+
+**Intellectural Work** - Synonymn of container
 
 **IR** - Institutional Repository
 
