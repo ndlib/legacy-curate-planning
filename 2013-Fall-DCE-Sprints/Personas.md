@@ -66,7 +66,7 @@ There is exisiting metadata in dublin core currently within a Filemaker Pro Data
 ## Psychology Professor
 
 A psychology professor has articles and related data in the form of psychological tests and measures that they would like to archive and share.
-Some materials may not be owned by Prof. Corning, but may want to link to items that are not owned.
+Some materials may not be owned by the professor, but may want to link to items that are not owned.
  More details TBD.
 
 ## Business Professors
@@ -83,7 +83,7 @@ They would like to archive current, previous versions of articles in the journal
 
 ## Online Journal
 
-The John Reilly Center publishes an online journal, and can see needing permanent web addresses and long-term discovery services.
+The a center on campus publishes an online journal, and can see needing permanent web addresses and long-term discovery services.
 Unclear yet on content in addition to text.
 Meeting with them in mid-September.
 
