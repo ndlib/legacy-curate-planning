@@ -34,12 +34,12 @@ There is typically a tabular dataset associated with each audio recording with 1
 They currently share and version files via Subversion and the software is on Sourceforge.
 They are also interested in applying animal behavior specific ontology(s) to the records.
 
-## Short Essay Journal Editor
+## Short Essay/Multimedia composition Journal Editor
 
 Editors of an annual journal of selected best writing samples from first year students called Fresh Writing would like to convert their publication currently in print for the last 10 years to an online site as more work becomes "multimedia".
 While work has been text only in the past, work now includes text, images, and video.
 They would like to have materials preserved in CurateND and distributed through an online journal site with access to current material as well as materials from previous works.
-They would also like to archive past print edition, but there may be copyright usage limitations as they are owned by the publisher.
+They would also like to archive past print edition, but there may be copyright usage limitations as they are owned by the publisher.  Initially, a main page with the materials managed as a collection may be good enough. Then, the public face could be migrated to an independent site that is fed by content within the collection.  It would need to have different annual editions of content within the collection.  If content is in the IR as a collection, they would like to search just within the collection and sort a listing of materials just in the collection or search results.  As some past materials may have copyright issues they will need to grant access to some items to a list of users (ie a class), campus only access, and automatically expire access at the end of the semester.  Then, in the Spring they would like to have a website of content if possible.
 There is a submission and review process in December of possible selections for publication in the journal.
 
 ## Applied and Computation Math and Statistics Professor
