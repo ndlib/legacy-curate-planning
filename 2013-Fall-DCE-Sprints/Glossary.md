@@ -24,7 +24,7 @@
 
 **Group** - A set of Accounts
 
-**Intellectural Work** - Synonymn of container
+**Intellectural Work** - Synonym of container
 
 **IR** - Institutional Repository
 
