@@ -18,7 +18,9 @@
 
 **Content** - Abstract; Contains reference to something and metadata; Its encouraged that Content should belong an implementation of a Container; (i.e. Think of Content as a proton in physics; it prefers to be a part of something);  It is Collectible
 
-**Dataset** - An implementation of a Container
+**Curation Concern** - A synonym for Container.
+
+**Dataset** - An implementation of a Container.
 
 **Delegate** - A User that has been granted permission to perform actions on behalf of another User
 
@@ -36,7 +38,7 @@
 
 **Person** - a named singular entity; A Person may have a one to one relationship with a User; A person is a Container?
 
-**Privilege** - Defines what an Account can see and what an Account can do 
+**Privilege** - Defines what an Account can see and what an Account can do
 
 **Project** - It is a synonym for Collection
 
