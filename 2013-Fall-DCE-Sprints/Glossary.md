@@ -20,6 +20,8 @@
 
 **Dataset** - An implementation of a Container
 
+**Delegate** - A User that has been granted permission to perform actions on behalf of another User
+
 **Embedded Content** - Stores Files, derivatives, and Technical Metadata; It has Access Controls
 
 **Group** - A set of Accounts
