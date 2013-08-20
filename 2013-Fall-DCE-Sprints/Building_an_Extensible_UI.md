@@ -22,6 +22,35 @@ The 800 pound gorilla is [twitter bootstrap](http://getbootstrap.com).
 Bootstrap 3 addresses may of the limitations of bootstrap 2.
 We will be using Bootstrap 3 as the underlying framework for Curate.
 
+The [official twitter bootstrap](https://github.com/twbs/bootstrap) project uses LESS.
+
+### Integrating With Twitter Bootstrap
+Twitter Bootstrap is an actively developed project.
+This is especially true right now as version 3 is being finalized.
+We have three options for assimilating these files:
+
+- Freeze a copy of the precompiled CSS and JavaScript in the Curate gem
+- Use the [bower](http://bower.io) package of twitter bootstrap in our application
+- Use a third-party gem to manage the bootstrap assets
+
+#### Static Assets
+Freezing the static assets into our gem is a bad idea.
+It is not extensible and will force design assumptions onto the gem adopters.
+
+#### Bower Integration
+[Bower](http://bower.io) is a package manager for front-end code.
+There are some [simple](https://gist.github.com/benschwarz/5874031) [ways](http://stackoverflow.com/questions/16772167/bower-and-rails-asset-pipeline-import) to feed bower packages into the asset pipeline.
+There are also utilities to [help manage your bower packages in a Rails project](https://github.com/42dev/bower-rails/) or even [replace the asset pipeline entirely with a bower-centric toolchain](https://github.com/d-i/half-pipe).
+
+Twitter bootstrap is officially distributed as a [bower package](http://sindresorhus.com/bower-components/) so there would be some advantages to sticking with the canonical version.
+Integrating with bower at the application level seems tenable but it is not clear how one would do this inside a [rails engine](http://edgeguides.rubyonrails.org/engines.html).
+
+#### Use a gem
+Since LESS can be converted to SASS without too much pageantry there are several SASS ports of twitter bootstrap.
+Of the actively-maintained projects Thomas McDonald's [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) appears to be the most popular.
+It is also nicely structured to take advantage of the Rails Asset Pipeline.
+As twitter bootstrap v3 has not been finalized we would have to track the [bootstrap 3 branch](https://github.com/thomas-mcdonald/bootstrap-sass/tree/3) of this gem.
+
 ## Write Modular CSS
 There are [several](http://smacss.com) [approaches](https://github.com/stubbornella/oocss/wiki) to making CSS code more manageable.
 The idea is that if you alter the way you code CSS it can be reused more effectively, even if the reuse is in a different context.
@@ -44,16 +73,8 @@ They provide something _like_ CSS that gives us variables, modularity, and inher
 [LESS](http://lesscss.org) and [SASS](http://sass-lang.com) have similar design goals --- they even look pretty similar.
 For our purposed SASS is a better fit because of the way variables work.
 In LESS variables are scoped by context; to extend a LESS project you have to override the file where the variables are declared.
-In SASS variables have the `!default` option which allows them to be overridden from _outside_ their context.
+In SASS variables have the `!default` option which allows them to be set from _outside_ their context.
 This is great because it is a simpler way to override just the properties you need to.
-
-The [official twitter bootstrap](https://github.com/twbs/bootstrap) project uses LESS but there are still options.
-
-### Which SASS Implementation?
-Since LESS can be converted to SASS without too much pageantry there are several SASS ports of twitter bootstrap.
-Of the actively-maintained projects Thomas McDonald's [bootstrap-sass](https://github.com/thomas-mcdonald/bootstrap-sass) appears to be the most popular.
-It is also nicely structured to take advantage of the Rails Asset Pipeline.
-As twitter bootstrap v3 has not been finalized we will be tracking the [bootstrap 3 branch](https://github.com/thomas-mcdonald/bootstrap-sass/tree/3) of this gem.
 
 ## Using the Asset Pipeline
 The Rails [Asset Pipeline](http://guides.rubyonrails.org/asset_pipeline.html) is really helpful.
