@@ -7,6 +7,8 @@ You can take some of the edge off by:
 - Writing modular CSS
 - Extending CSS with a pre-processor
 - Leveraging the Rails Asset Pipeline
+- Sticking to Progressive Enhancement
+- Componentize your JavaScript
 
 ## Templating Systems
 Rails has a [templating system](http://guides.rubyonrails.org/layouts_and_rendering.html).
@@ -85,3 +87,24 @@ There are three things that it excels at:
 - Managing the [load path](https://github.com/sstephenson/sprockets#the-load-path) for assets
 
 Of these managing the load path is perhaps the most powerful.
+
+## Progressive Enhancement
+[Progressive Enhancement](http://en.wikipedia.org/wiki/Progressive_enhancement) is a design philosophy that has been around for a while.
+The idea is simple: make your website work for the lowest common denominator and add features, decoration, and behavior on top of the baseline for those who can take advantage of it.
+In 2006 this meant that you had to make sure it worked in IE6 with a 1024x768 screen.
+This is no longer the case.
+Modern web development has coalesced on the idea of [mobile-first responsive design](http://bradfrostweb.com/blog/web/mobile-first-responsive-web-design/).
+
+There is a lot to discuss here but the immediate takeaways are:
+
+- Your website should still work if JavaScript is turned off.
+- At the very least all _public_ pages should treat mobile devices  as a first-class citizen.
+- Use tools like [modernizer](http://modernizr.com) to enable features for more advanced browsers.
+- It is perfectly fine for a page to look different from browser to browser.
+  It is _not_ ok for it to break.
+
+## Componentize your JavaScript
+Each widget, tool, or behavior that can't be trivially implemented in jQuery should be encapsulated on its own right.
+The [jQuery widget factory](http://api.jqueryui.com/jQuery.widget/) is a great way to do this.
+The widget factory provides connivence methods for managing its instantiation, event watching, and scopes `this` appropriately.
+On top of this if you keep the jQuery widgets in separate files they can be overridden entirely in the parent application using the asset pipeline.
