@@ -100,6 +100,11 @@ Deposit faculty video and student content.
 Share and stream video content.
 More details TBD.
 
+## Music Professors
+
+Two music faculty members do much work with audio and video files, and don’t currently have a place to store them and make them available. They would be happy for secure backup space, but the real selling point would be the ability to view these files as well, or at least link them to another website.
+For example, one professor would like a site that optimally includes video content. If that content is hosted on CurateND, could it be streamed through a separate website? These are the type of questions all faculty working with multimedia will likely ask. Storing is an important, but easy, step one. Creating access is what will truly seal the deal. 
+
 ## General Researcher
 
 Researcher has a project where they have datasets to share.
