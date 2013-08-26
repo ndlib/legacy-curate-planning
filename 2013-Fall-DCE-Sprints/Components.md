@@ -1,6 +1,6 @@
 # Curate Components
 Curate is a Institutional Repository (IR) solution.
-It's goal is to accommodate a wide variety of data and metadata without forfeiting the ability to craft management and discovery experiences for very specific use cases.
+Its goal is to accommodate a wide variety of data and metadata without forfeiting the ability to craft management and discovery experiences for very specific use cases.
 To that end the design of Curate will deliberately provide seams between functional concerns.
 This should allow the application to scale horizontally by adding components that share a common interface.
 
