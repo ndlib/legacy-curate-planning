@@ -10,17 +10,17 @@
 
 **Audio File** - A type of Embedded Content
 
-**Collectible** - A Repository Object (i.e. Content, Container, Collection) that can be part of a Collection.
+**Collectible** - A Repository Object (i.e. Content, Work, Collection) that can be part of a Collection.
 
 **Collection** - It is a set of Collectibles; It has Access Controls defining which Accounts can add or remove Collectibles; It is Collectible; It contains Descriptive Metadata
 
-**Container** - Abstract; It is an implementation of an intellectual work and contains Descriptive Metadata; A set of references to Content; (e.g. Senior Thesis is an implementation of a Container); It has Access Controls; It is Collectible
+**Container** - A synonym for Work.
 
-**Content** - Abstract; Contains reference to something and metadata; Its encouraged that Content should belong an implementation of a Container; (i.e. Think of Content as a proton in physics; it prefers to be a part of something);  It is Collectible
+**Content** - Abstract; Contains reference to something and metadata; Its encouraged that Content should belong an implementation of a Work; (i.e. Think of Content as a proton in physics; it prefers to be a part of something);  It is Collectible
 
-**Curation Concern** - A synonym for Container.
+**Curation Concern** - A synonym for Work.
 
-**Dataset** - An implementation of a Container.
+**Dataset** - An implementation of a Work.
 
 **Delegate** - A User that has been granted permission to perform actions on behalf of another User
 
@@ -36,7 +36,7 @@
 
 **Manifest** - A well formed file that defines how the contents of a directory are to be ingested into the IR
 
-**Person** - a named singular entity; A Person may have a one to one relationship with a User; A person is a Container?
+**Person** - a named singular entity; A Person may have a one to one relationship with a User. A Person is a Container.
 
 **Privilege** - Defines what an Account can see and what an Account can do
 
@@ -44,10 +44,12 @@
 
 **Reporting Group** - A Group used to aggregate reporting statistics
 
-**Senior Thesis** - An implementation of a Container
+**Senior Thesis** - An implementation of a Work
 
 **Software Agent** - a Account that is assigned to a non-human (for API access)
 
 **User** - An Account that is assigned to a human; A User has a one to one relationship with a Person
 
 **Video File** - A type of Embedded Content
+
+**Work** - Abstract; It is an implementation of an intellectual work and contains Descriptive Metadata; A set of references to Content; (e.g. Senior Thesis is an implementation of a Work); It has Access Controls; It is Collectible
