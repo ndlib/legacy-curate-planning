@@ -26,6 +26,8 @@
 
 **Embedded Content** - Stores Files, derivatives, and Technical Metadata; It has Access Controls
 
+**External Resource** - A synonym for Linked Content
+
 **Group** - A set of Accounts
 
 **Intellectural Work** - Synonym of container
@@ -43,6 +45,8 @@
 **Project** - It is a synonym for Collection
 
 **Reporting Group** - A Group used to aggregate reporting statistics
+
+**Repository Object** - Abstract; anything in the repository e.g. Content, Work, Collection, Person
 
 **Senior Thesis** - An implementation of a Work
 
