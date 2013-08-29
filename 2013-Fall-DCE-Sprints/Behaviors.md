@@ -22,6 +22,8 @@ Items in bold are critical for a successful launch.
 - Citation: provide pre-formatted citations for content in various forms.
 - Annotation: allow scholarly commentary to be applied to content, works, or collections.
 - Arrangement: facilitate the grouping of works and content into arbitrary collections.
+- Working Sets: data management needs for a research project are not the same as curating digitized humanities materials.
+  We think that Projects can be an answer for this.
 
 ## Administration
 - **Delegate Accounts:** allow users to act on behalf of other users.
