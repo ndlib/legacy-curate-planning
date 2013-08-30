@@ -14,7 +14,7 @@ Items in bold are critical for a successful launch.
 ## Publishing
 - **Personal Profile:** present a curated list of the work of an individual.
 - Dissemination: distribute derivatives of repository content.
-- Display: presetent different materials through viewers e.g. video player, document viewer, image viewer.
+- Display: present different materials through viewers e.g. video player, document viewer, image viewer.
 - Syndication: provide embeddable views and or ATOM feeds of content to be displayed in another system.
   Expose metadata to enhance search engine integration e.g. schema.org microdata, Google Scholar.
 - Exhibition: facilitating the creation of "learning experiences" showcasing the materials in the repository.
