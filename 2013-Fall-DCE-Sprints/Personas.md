@@ -113,7 +113,7 @@ They want to link that project to either their Box account or file space to have
 
 ## General Faculty
 
-Faculty member wants to create a personal profile that lists all the publications, datasets, and other related work they have done.
+Faculty member wants to create a personal profile that lists ~all~ selected the publications, datasets, and other related work they have done.
 They want to include both items they archive in CurateND, and items linked externally.
 The faculty member wants metrics on how many times something has been viewed, downloaded, and cited.
 
