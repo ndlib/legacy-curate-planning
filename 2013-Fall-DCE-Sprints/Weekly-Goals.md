@@ -42,6 +42,7 @@ Overarching Goal: Meet the [General Faculty Persona](https://github.com/ndlib/pl
 	- Have that work be displayed on my profile page
 	- Link one of my Articles to any of my Datasets (and vice versa)
 - As a Faculty member, I can view metrics related to number of views, downloads of my Works.
+- As a Faculty member, I can discover the Works (e.g. of my peers, subjects of interest) and Profiles
 
 # Week 4 (9 September)
 
