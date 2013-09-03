@@ -33,9 +33,17 @@ Overarching Goal: Record and Report the Activity that is happening; In doing thi
 	- Given I am logged in, and I create a Container, then I will see an Activity Entry for the Container in my Activity Stream
 	- Given I am logged in, and someone else has downloaded Content that I created, then I will see an Activity Entry for the Content in my Activity Stream
 
-Week 3
+# [Week 3 (3 September)](https://github.com/ndlib/planning/issues?milestone=6&page=1&state=open)
 
-Week 4
+Overarching Goal: Meet the [General Faculty Persona](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Personas.md#general-faculty) use case.
+
+- As a Faculty member, I can
+	- Submit/add a work
+	- Have that work be displayed on my profile page
+	- Link one of my Articles to any of my Datasets (and vice versa)
+- As a Faculty member, I can view metrics related to number of views, downloads of my Works.
+
+# Week 4 (9 September)
 
 Week 6
 
