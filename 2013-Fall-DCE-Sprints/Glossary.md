@@ -48,6 +48,16 @@
 
 **Repository Object** - Abstract; anything in the repository e.g. Content, Work, Collection, Person
 
+**Request, Anonymous** - A request, without any credentials, to a resource in the IR
+
+**Request, Authenticated** - A request, with proper credentials for an Account, to a resource in the IR
+
+**Request, Authorized** - An Authenticated Request to the IR that does not have access to the resource
+
+**Request, Unauthorized**- An Authenticated Request to the IR that does not have access to the resource; It is assumed that Unauthorized Request and Anonymous Request would have similar responses.
+
+**Public Request** - Synonym for Anonymous Request
+
 **Senior Thesis** - An implementation of a Work
 
 **Software Agent** - a Account that is assigned to a non-human (for API access)
