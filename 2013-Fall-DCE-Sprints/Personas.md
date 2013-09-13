@@ -162,3 +162,27 @@ They want features such as project spaces, internal and external collaboration, 
   - Download data subsets
   - Generate summary statistics (at least for tabular data)
   - Visualization (e.g., of time series)
+  - 
+  
+## Master of Science in Education department assistant
+Thesis deposit
+The department assistant is responsible for gathering the final versions of the masters theses, the accompanying metadata, and author permissions,
+and for depositing theses in the repository in the departmental collection. Metadata for the theses for each semester, including any
+creative commons license chosen, access level, and embargo (if any) will be gathered in Excel format. Theses will usually be single word or PDF
+files, though they may have additional auxiliary files. Each thesis should be linked to a student author profile after it is submitted to the
+repository. Only the department assistant for the education department, (or the individual student authors), should be able to create theses in
+this collection. Some student authors may prefer to submit their theses directly, or to make edits to their thesis records after creation.
+
+## Catalog management and dissertation access assistant
+Bulk-uploading ETDs + metadata
+The CMDA assistant receives ETDs from ProQuest and is responsible for depositing the dissertation PDFs and their metadata in the repository. The
+dissertations arrive after they have been submitted to ProQuest, in irregular and unpredictable batches. The metadata is in a custom ProQuest
+XML schema, which must be stored in the repository in its original format and also be linked to a library catalog record (in addition to serving as
+the primary descriptive metadata for the repository record itself).
+
+
+## Civil Engineering research group
+This research group is concluding its 15 year research project, and would like to deposit its dataset in the repository. The data is stored in a
+custom MySQL database with close to a 1/2 million rows. It is accompanied by README files and other miscellaneous documents that describe the
+database structure and the provenance of the data within it. The group wants to deposit the database, software developed locally to query the
+data, and affiliated files in the repository.
