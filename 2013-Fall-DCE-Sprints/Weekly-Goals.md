@@ -45,10 +45,10 @@ Overarching Goal: Meet the [General Faculty Persona](https://github.com/ndlib/pl
 - As a Faculty member, I can discover the Works (e.g. of my peers, subjects of interest) and Profiles
 
 # Week 4 (9 September)
+Continuation of Week 3
 
-Week 6
+# [Week 5 (23 September)](https://github.com/ndlib/planning/issues?milestone=9&state=open) (week of 16 September was Hydra Partners meeting at Penn State)
 
-Week 7
 
 Week 8
 
