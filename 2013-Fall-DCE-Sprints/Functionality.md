@@ -173,21 +173,23 @@ Rich annotation tools may be more appropriate for stand-alone applications than 
 ### Arrangement
 There are three types of "collections" used by Curate.
 
-- Containers or "administrative collections" that bind together objects that can be considered a single unit e.g. a metadata record and two file records.
+- Works bind together objects that can be considered a single unit e.g. a metadata record and two file records.
 - Collections or "intellectual arrangements" are user-created groupings based on some theme, concept, or arbitrary criteria.
-- Projects contain a working set of Containers or Items that supports ongoing research
+- Administrative Sets contain a working set of Works or Items that supports ongoing research
 
-**Containers** are first-order collections whose existence should be largely transparent to the end-user.
+### Works
+Works are first-order collections whose existence should be largely transparent to the end-user.
 They decorate a group of repository objects with:
 
 - A named context
 - A description
 - Additional metadata
 
-The "named context" of a Container is called a Curation Concern.
+The "named context" of a Work is called a Curation Concern.
 Curation Concerns provide hooks for workflow (e.g. mediated deposits, syndication approval) and inform how the content is presented.
 
-**Collections** are essentially an arbitrary arrangement of the material.
+### Collections
+Collections are essentially an arbitrary arrangement of the material.
 An Annotation defines the relationship between a Collection and the Items in that collection.
 An Annotation and a Collection have basically the same metadata but an Annotation is a leaf and a Collection is a node.
 Collections have several characteristics:
@@ -199,7 +201,11 @@ Collections have several characteristics:
 
 Collections should adopt or adapt [Sufia's](https://github.com/projecthydra/sufia) notion of a Collection.
 
-**Projects** will typically be composed of research-related materials.
+### Administrative Sets
+Administrative Sets are collections that are decorated with additional behavior.
+
+Projects are one type of administrative set.
+A project will typically be composed of research-related materials.
 Projects in Curate exist to provide:
 
 - Long-term preservation of significant data and supporting files
