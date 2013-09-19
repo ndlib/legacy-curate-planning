@@ -177,7 +177,7 @@ There are three types of "collections" used by Curate.
 - Collections or "intellectual arrangements" are user-created groupings based on some theme, concept, or arbitrary criteria.
 - Administrative Sets contain a working set of Works or Items that supports ongoing research
 
-### Works
+#### Works
 Works are first-order collections whose existence should be largely transparent to the end-user.
 They decorate a group of repository objects with:
 
@@ -188,7 +188,7 @@ They decorate a group of repository objects with:
 The "named context" of a Work is called a Curation Concern.
 Curation Concerns provide hooks for workflow (e.g. mediated deposits, syndication approval) and inform how the content is presented.
 
-### Collections
+#### Collections
 Collections are essentially an arbitrary arrangement of the material.
 An Annotation defines the relationship between a Collection and the Items in that collection.
 An Annotation and a Collection have basically the same metadata but an Annotation is a leaf and a Collection is a node.
@@ -201,7 +201,7 @@ Collections have several characteristics:
 
 Collections should adopt or adapt [Sufia's](https://github.com/projecthydra/sufia) notion of a Collection.
 
-### Administrative Sets
+#### Administrative Sets
 Administrative Sets are collections that are decorated with additional behavior.
 
 Projects are one type of administrative set.
