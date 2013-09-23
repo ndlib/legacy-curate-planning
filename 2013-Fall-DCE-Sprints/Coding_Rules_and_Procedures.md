@@ -29,6 +29,24 @@ Given that this is a multi-institution collaboration, we will be leveraging Gith
 To best facilitate this, we will be collaborating via the [ProjectHydra 2013 Partner Sprints Github Organization][2].
 It is envisioned that some of the components created as part of this Github Organization will be migrated to the [Project Hydra organization][3].
 
+### Commit Messages
+
+* Commits should reference the relevant Github Issue(s). For example:
+
+> Adds tests for issue ndlib/planning#1
+
+This will automatically create links between your commit and the issue. 
+See https://github.com/ndlib/curate/commit/25a37311265461f757cb304b69132d767ac427f3 for an example.
+
+We have multiple codebases, but a single repo for issues, so without this cross-linking between 
+commits and issues, it's quite difficult to track what's happening where.
+
+* Use commit messages to close the relevant issue. For example:
+
+> Closes ndlib/planning#2
+
+See https://help.github.com/articles/closing-issues-via-commit-messages for more details.
+
 ### Pull Requests
 
 PROPOSED:
