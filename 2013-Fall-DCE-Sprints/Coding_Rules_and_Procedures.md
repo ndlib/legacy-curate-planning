@@ -41,11 +41,12 @@ See https://github.com/ndlib/curate/commit/25a37311265461f757cb304b69132d767ac42
 We have multiple codebases, but a single repo for issues, so without this cross-linking between 
 commits and issues, it's quite difficult to track what's happening where.
 
-* Use commit messages to close the relevant issue. For example:
+* If appropriate, use commit messages to close the relevant issue. For example:
 
 > Closes ndlib/planning#2
 
-See https://help.github.com/articles/closing-issues-via-commit-messages for more details.
+See https://help.github.com/articles/closing-issues-via-commit-messages for more details. 
+Note that you may *not* want to do this if you need a pull request to clear before closing the issue.
 
 ### Pull Requests
 
@@ -54,7 +55,7 @@ PROPOSED:
 We will use the [Contributing Guidelines for Project Hydra][4] with the following caveat:
 
 * A Pull Request must be reviewed and ultimately merged by a person that is not of the submitter's institution (i.e. Notre Dame cannot merge Notre Dame's work)
-* Don't merge a pull request unless the tests are passing in Travis CI.
+
 [1]:http://robots.thoughtbot.com/post/50655960596/sandi-metz-rules-for-developers "Sandi Metz' Rules for Developers"
 [2]:https://github.com/projecthydra-2013-partner-sprints "A Temporary Github Organization"
 [3]:https://github.com/projecthydra
