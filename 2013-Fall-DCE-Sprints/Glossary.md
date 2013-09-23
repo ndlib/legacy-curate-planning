@@ -26,6 +26,8 @@
 
 **Embedded Content** - Stores Files, derivatives, and Technical Metadata; It has Access Controls
 
+**ETD** - Electronic Thesis and Dissertation; a Thesis is reuqired for a Masters Degree, a Dissertation is required for a PhD
+
 **External Resource** - A synonym for Linked Content
 
 **Group** - A set of Accounts
