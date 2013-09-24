@@ -79,6 +79,7 @@ Initially we believe that we will need to address the following:
 - Simple metrics available for work deposited in IR
 - Delegate deposit of work
 - Support for basic search of works, collections, people, and projects
+- Both Personal and Organizational profiles with owned collections
 
 ## Phase 2, Full Launch:
 
