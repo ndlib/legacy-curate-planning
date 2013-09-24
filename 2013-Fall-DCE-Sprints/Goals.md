@@ -77,6 +77,8 @@ Initially we believe that we will need to address the following:
 - Thumbnails for files or records in list views
 - DOIs and PURLs for any work
 - Simple metrics available for work deposited in IR
+- Delegate deposit of work
+- Support for basic search of works, collections, people, and projects
 
 ## Phase 2, Full Launch:
 
@@ -89,6 +91,7 @@ Initially we believe that we will need to address the following:
   - Author identifiers/authorities (ORCID, LC, ISNI or other)
   - UI branding
   - Metadata specification field limits
+- Scopable searches to object like collections, projects
 - Mediated Workflow
 - More sophisticated image viewer
 - ORCID integration support
