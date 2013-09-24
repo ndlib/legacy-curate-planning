@@ -81,6 +81,7 @@ Initially we believe that we will need to address the following:
 ## Phase 2, Full Launch:
 
 - Installable Solution Bundle
+- Batch Import functionality using tools like Dropbox, FTP, Google Drive, Dropbox, etc.
 - Content and Engine specific “plug-ins” consumable by non-Shared IR Hydra applications
 - Configurable/swappable elements
   - DOI provider
