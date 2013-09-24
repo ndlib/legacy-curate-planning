@@ -65,3 +65,33 @@ Initially we believe that we will need to address the following:
 - Access levels can vary within the hierarchy of a collection (e.g. a public collection may contain campus-only items. Those items would only be visible to people on campus but the rest would always be visible. )
 - Basic preservation standards, common metadata fields, and file format requirements enforced.
 - Preservation is a deferred decision; For now the IR is concerned with Access only
+
+## Curate/Shared IR First Release Candidate Functional Goals
+
+- Personal Profiles that show works and related works for a faculty member
+- Deposit of Work Types including:
+  - Articles, Datasets, Images, ETDs, Audio, Conference Proceedings, Video (streaming out of scope), Software
+- Linking of any work, collection, or administrative set to another work, collection, or administrative set
+- Creation of both general collections and administrative sets including managed collections and projects
+- Support for Basic viewers of files that can be downloaded
+- Thumbnails for files or records in list views
+- DOIs and PURLs for any work
+- Simple metrics available for work deposited in IR
+
+## Phase 2, Full Launch:
+
+- Installable Solution Bundle
+- Content and Engine specific “plug-ins” consumable by non-Shared IR Hydra applications
+- Configurable/swappable elements
+  - DOI provider
+  - Authorization/identification services
+  - Author identifiers/authorities (ORCID, LC, ISNI or other)
+  - UI branding
+  - Metadata specification field limits
+- Mediated Workflow
+- More sophisticated image viewer
+- ORCID integration support
+- Video and Audio Streaming
+- Publish to Dissemination Channels like Digital Exhibits
+- Indexed by Primo for Discovery
+
