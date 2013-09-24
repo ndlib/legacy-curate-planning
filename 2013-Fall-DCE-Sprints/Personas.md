@@ -123,6 +123,16 @@ A Collection Manager has a set of materials they want to archive and share.
 It is a combination of public domain, and under copyright material usable on campus via fair use.
 They want to create a collection and make public domain items shared over open access, and share other items with campus only.
 
+## General Institute
+
+A campus institute has materials from conferences they facilitate; and articles, audio, and video from a journal they manage.
+They want to archive and display posters, presentations (materials and recordings), submitted papers together from a conferrence.
+They want to archive content feeding issues of an online journal that does not have a consistent publication schedule (some content
+might be released monthly, some might be quarterly).  To promote content they want to be able to tweet, and post to other social media
+to promote content.  They want to have authors link to content in online CV's or profiles.  They would like content coming from the 
+repository branded with their institute (ie. logo included).  They want to manage all of their content as owned by their institute and
+create collections of mixed formats, and also mix in links to audio and video within text.
+
 ## Center for Social Research
 
 The Center for Social Research supports faculty and researchers in social science.
