@@ -126,4 +126,4 @@ Initially we believe that we will need to address the following:
 - Indexed by Primo for Discovery (a more generic description for this: able to express metadata in a variety of common schema: MODS-XML, etc.)
 - SWORD support
 - Batch editing support
-
+- Configurable email notifications: upon deposit in an owned set, upon modification, upon curation action, etc.
