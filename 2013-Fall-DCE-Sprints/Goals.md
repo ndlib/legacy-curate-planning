@@ -68,22 +68,40 @@ Initially we believe that we will need to address the following:
 
 ## Curate/Shared IR First Release Candidate Functional Goals
 
-- Personal Profiles that show works and related works for a faculty member
-- Deposit of Work Types including:
-  - Articles, Datasets, Images, ETDs, Audio, Conference Proceedings, Video (streaming out of scope), Software
-- Linking of any work, collection, or administrative set to another work, collection, or administrative set
-- Creation of both general collections and administrative sets including managed collections and projects
-- Support for Basic viewers of files that can be downloaded
-- Thumbnails for files or records in list views
-- DOIs and PURLs for any work
-- Simple metrics available for work deposited in IR
-- Delegate deposit of work
-- Support for basic search of works, collections, people, and projects
-- Both Personal and Organizational profiles with owned collections
+- Sprints 1 & 2 [ Complete]
+  - Personal Profiles that show works and related works for a faculty member
+  - Linking of any work
+  - Deposit of Work Types including:
+    - Articles, Datasets
+- Sprint 3
+  - DOIs and PURLs for any work
+  - Personal Profile Polish
+  - Deposit of Work Types including:
+    - Images, ETDs, Audio, Conference Proceedings, Video (streaming out of scope), Software
+  - Support for basic search of works, collections, people, and projects
+  - Collection Access Permissions
+
+- Simple metrics available for work deposited in IR [ New]
+
+- Sprint 4
+  - Deposit of Work Types including:
+    - Conference Proceedings, Book, Audio, Video (streaming out of scope), Software 
+  - Delegate Deposit 
+  - Organizational profiles with owned collections
+  - Creation of both general collections and administrative sets including managed collections and projects
+  - Linking of any work, collection, or administrative set to another work, collection, or administrative set
+  - Thumbnails for files or records in list views
+  - Support for Basic viewers of files that can be downloaded
+- Sprint 5 [ Cleanup]
+  - Cleanup of Search Rules for different objects, full text indexing 
+  - UI Cleanup (works, search, overall flow, profile polish)
+  - Cleanup metadata for works including Article, Dataset, Image, ETD
+  - Integrate feedback from early user testing
 
 ## Phase 2, Full Launch:
 
 - Installable Solution Bundle
+- Integrate controlled vocabularies
 - Batch Import functionality using tools like Dropbox, FTP, Google Drive, Dropbox, etc.
 - Content and Engine specific “plug-ins” consumable by non-Shared IR Hydra applications
 - Configurable/swappable elements
