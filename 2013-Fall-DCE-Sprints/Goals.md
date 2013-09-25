@@ -98,7 +98,7 @@ Initially we believe that we will need to address the following:
   - Cleanup metadata for works including Article, Dataset, Image, ETD
   - Integrate feedback from early user testing
 
-[Next up in Sprint 5 if we move quickly]
+[Extra Credit - Next up in Sprint 5 if we move quickly]
 - Organizational profiles with owned collections
   - Creation of both general collections and administrative sets including managed collections and projects
   - Linking of any work, collection, or administrative set to another work, collection, or administrative set
