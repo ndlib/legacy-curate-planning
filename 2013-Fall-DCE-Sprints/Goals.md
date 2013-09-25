@@ -69,30 +69,32 @@ Initially we believe that we will need to address the following:
 ## Curate/Shared IR First Release Candidate Functional Goals
 
 - Sprints 1 & 2 [ Complete]
+  - Support modular work types (“Curation Concerns”)
+  - Exemplar types: Article, Dataset, Image, ETD
   - Personal Profiles that show works and related works for a faculty member
   - Linking of any work
   - Deposit of Work Types including:
     - Articles, Datasets
-- Sprint 3
+- Sprint 3 [9/23-10/4]
   - DOIs and PURLs for any work
   - Personal Profile Polish
   - Deposit of Work Types including:
-    - Images, ETDs, Audio, Conference Proceedings, Video (streaming out of scope), Software
+    - Images, ETDs
   - Support for basic search of works, collections, people, and projects
   - Collection Access Permissions
-
-- Simple metrics available for work deposited in IR [ New]
-
-- Sprint 4
+- Sprint 4 [10/7-10/18]
   - Deposit of Work Types including:
-    - Conference Proceedings, Book, Audio, Video (streaming out of scope), Software 
+    - Book, Conference Proceedings, Audio, Video (streaming out of scope), Software 
   - Delegate Deposit 
+  - Simple metrics available for work deposited in IR
+  - Thumbnails for files or records in list views
+- Sprint 5 [10/21-11/1]
   - Organizational profiles with owned collections
   - Creation of both general collections and administrative sets including managed collections and projects
   - Linking of any work, collection, or administrative set to another work, collection, or administrative set
-  - Thumbnails for files or records in list views
-  - Support for Basic viewers of files that can be downloaded
-- Sprint 5 [ Cleanup]
+  - Break out exemplar types into separate gems
+  Be able to register additional types locally [ sprint 7?]
+- Sprint 6 [ Cleanup  11/4-11/15]
   - Cleanup of Search Rules for different objects, full text indexing 
   - UI Cleanup (works, search, overall flow, profile polish)
   - Cleanup metadata for works including Article, Dataset, Image, ETD
@@ -112,7 +114,7 @@ Initially we believe that we will need to address the following:
   - Metadata specification field limits
 - Scopable searches to object like collections, projects
 - Mediated Workflow
-- More sophisticated image viewer
+- More sophisticated image viewer, page turner
 - ORCID integration support
 - Video and Audio Streaming
 - Publish to Dissemination Channels like Digital Exhibits
