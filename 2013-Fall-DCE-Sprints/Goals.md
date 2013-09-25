@@ -84,25 +84,30 @@ Initially we believe that we will need to address the following:
   - Collection Access Permissions
 - Sprint 4 [10/7-10/18]
   - Deposit of Work Types including:
-    - Book, Conference Proceedings, Audio, Video (streaming out of scope), Software 
+    - Book, Conference Proceedings
   - Delegate Deposit 
   - Simple metrics available for work deposited in IR
   - Thumbnails for files or records in list views
 - Sprint 5 [10/21-11/1]
-  - Organizational profiles with owned collections
-  - Creation of both general collections and administrative sets including managed collections and projects
+  - Deposit of Work Types including:
+    - Audio, Software, Video (streaming out of scope, do we wait on this?) 
   - Linking of any work, collection, or administrative set to another work, collection, or administrative set
-  - Break out exemplar types into separate gems
-  Be able to register additional types locally [ sprint 7?]
 - Sprint 6 [ Cleanup  11/4-11/15]
   - Cleanup of Search Rules for different objects, full text indexing 
   - UI Cleanup (works, search, overall flow, profile polish)
   - Cleanup metadata for works including Article, Dataset, Image, ETD
   - Integrate feedback from early user testing
 
+[Next up in Sprint 5 if we move quickly]
+- Organizational profiles with owned collections
+  - Creation of both general collections and administrative sets including managed collections and projects
+  - Linking of any work, collection, or administrative set to another work, collection, or administrative set
+
 ## Phase 2, Full Launch:
 
 - Installable Solution Bundle
+- Break out exemplar types into separate gems
+  - Be able to register additional types locally
 - Integrate controlled vocabularies
 - Batch Import functionality using tools like Dropbox, FTP, Google Drive, Dropbox, etc.
 - Content and Engine specific “plug-ins” consumable by non-Shared IR Hydra applications
