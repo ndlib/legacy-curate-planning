@@ -125,4 +125,5 @@ Initially we believe that we will need to address the following:
 - Publish to Dissemination Channels like Digital Exhibits
 - Indexed by Primo for Discovery (a more generic description for this: able to express metadata in a variety of common schema: MODS-XML, etc.)
 - SWORD support
+- Batch editing support
 
