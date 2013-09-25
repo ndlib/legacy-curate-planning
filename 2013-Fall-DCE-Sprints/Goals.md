@@ -123,5 +123,6 @@ Initially we believe that we will need to address the following:
 - ORCID integration support
 - Video and Audio Streaming
 - Publish to Dissemination Channels like Digital Exhibits
-- Indexed by Primo for Discovery
+- Indexed by Primo for Discovery (a more generic description for this: able to express metadata in a variety of common schema: MODS-XML, etc.)
+- SWORD support
 
