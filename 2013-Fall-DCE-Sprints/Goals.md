@@ -116,7 +116,7 @@ Initially we believe that we will need to address the following:
   - Authorization/identification services
   - Author identifiers/authorities (ORCID, LC, ISNI or other)
   - UI branding
-  - Metadata specification field limits
+  - Metadata specification field limits (? does this mean metadata schema are configurable per collection?)
 - Scopable searches to object like collections, projects
 - Mediated Workflow
 - More sophisticated image viewer, page turner
