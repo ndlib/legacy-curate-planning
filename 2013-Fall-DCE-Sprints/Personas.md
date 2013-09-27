@@ -12,11 +12,11 @@ Who will use this thing?
 
 ## Nuclear Physics Research Lab
 A nuclear physics research lab has roughly 10 different researchers, each working either collaboratively or on independent projects mostly grant funded.
-They are mandated to archive and share all the the raw data, experimental data, related software, and related publications.  The data
+They are mandated to archive and share all the the raw data, experimental data, related software, whitepapers, and related publications.  The data
 is in the range of 10's of TB with a growth rate of roughly 2 TB per year.  They currently have about 30 TB of data (~15 years) that needs
 to be archived.  They would like to organize their data within an organization profile for their lab, have profiles for any PI's
 or other lab staff, and have projects usually with a grant associated.  Experiments would then be archived underneath that
-wtih associated raw data, experimental data, software, and publications.  Some data needs to be embargoed, while some needs
+wtih associated raw data, experimental data, software, whitepapers, and publications.  Some data needs to be embargoed, while some needs
 to be openly shared.  They would also like to make profiles within the project hidden.  So, communication gets funneled to appropriate
 high level researchers.
 
