@@ -46,5 +46,5 @@ Raster images should be included as either PNG or JPEG as appropriate.
 
 [1]: http://github.github.com/github-flavored-markdown/
 [2]: https://github.com/ndlib/curate
-[3]: https://github.com/ndlib/curate/wiki
+[3]: https://github.com/ndlib/planning/wiki
 [4]: http://inkscape.org
