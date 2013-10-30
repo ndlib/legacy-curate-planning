@@ -1,7 +1,4 @@
-# Sprint planning for Fall 2013
-
-Starting August 19th, 2013 we will be working with Data Curation Experts.
-Documents related to that work are present in this folder.
+# Curate Development
 
 As per the [grand plan][1]:  
 [Goals][2] articulates the purpose and technical goals of project as a whole.  
