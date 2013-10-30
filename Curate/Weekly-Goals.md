@@ -35,7 +35,7 @@ Overarching Goal: Record and Report the Activity that is happening; In doing thi
 
 # [Week 3 (3 September)](https://github.com/ndlib/planning/issues?milestone=6&page=1&state=open)
 
-Overarching Goal: Meet the [General Faculty Persona](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Personas.md#general-faculty) use case.
+Overarching Goal: Meet the [General Faculty Persona](https://github.com/ndlib/planning/blob/master/Curate/Personas.md#general-faculty) use case.
 
 - As a Faculty member, I can
 	- Submit/add a work

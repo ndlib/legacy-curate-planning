@@ -18,7 +18,7 @@ to be archived.  They would like to organize their data within an organization p
 or other lab staff, and have projects usually with a grant associated.  Experiments would then be archived underneath that
 wtih associated raw data, experimental data, software, whitepapers, and publications.  Some data needs to be embargoed, while some needs
 to be openly shared.  They would also like to make profiles within the project hidden.  So, communication gets funneled to appropriate
-high level researchers.  See diagram of content model: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Personas/nuclear_physics_persona_object_model.jpg
+high level researchers.  See diagram of content model: https://github.com/ndlib/planning/blob/master/Curate/Personas/nuclear_physics_persona_object_model.jpg
 
 ## Chemistry and Computer Science Faculty
 

@@ -37,13 +37,13 @@ Building an extensible system is complicated.
 The encapsulation of and interfaces between functions and systems are critically important.
 Initially we believe that we will need to address the following:
 
-- [User management](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#user-management)
-- [Content types](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#content-types)
-  - [Content type registry](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#content-type-registry)
-- [Activity monitoring & messaging](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#activity-monitoring--messaging)
-- [Authority management](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#authority-management)
-- [Mediation channels](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#mediation-channels)
-- [Dissemination systems](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md#dissemination-systems)
+- [User management](https://github.com/ndlib/planning/blob/master/Curate/Components.md#user-management)
+- [Content types](https://github.com/ndlib/planning/blob/master/Curate/Components.md#content-types)
+  - [Content type registry](https://github.com/ndlib/planning/blob/master/Curate/Components.md#content-type-registry)
+- [Activity monitoring & messaging](https://github.com/ndlib/planning/blob/master/Curate/Components.md#activity-monitoring--messaging)
+- [Authority management](https://github.com/ndlib/planning/blob/master/Curate/Components.md#authority-management)
+- [Mediation channels](https://github.com/ndlib/planning/blob/master/Curate/Components.md#mediation-channels)
+- [Dissemination systems](https://github.com/ndlib/planning/blob/master/Curate/Components.md#dissemination-systems)
 
 ## Features
 - Support basic deposit, description, view, search, and access of the major types of formats and works (we call them Curation Concerns).

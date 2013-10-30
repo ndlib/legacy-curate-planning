@@ -14,9 +14,9 @@ Well-articulated stories will be moved to their own github issues.
 [Coding Rules and Procedures][7] outlines our proposal for coding standards and collaboration practices.
 
 [1]: https://github.com/ndlib/planning#the-process
-[2]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Goals.md
-[3]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Components.md
-[4]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Functionality.md
-[5]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Personas.md
-[6]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Stories.md
-[7]: https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Coding_Rules_and_Procedures.md
+[2]: https://github.com/ndlib/planning/blob/master/Curate/Goals.md
+[3]: https://github.com/ndlib/planning/blob/master/Curate/Components.md
+[4]: https://github.com/ndlib/planning/blob/master/Curate/Functionality.md
+[5]: https://github.com/ndlib/planning/blob/master/Curate/Personas.md
+[6]: https://github.com/ndlib/planning/blob/master/Curate/Stories.md
+[7]: https://github.com/ndlib/planning/blob/master/Curate/Coding_Rules_and_Procedures.md

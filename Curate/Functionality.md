@@ -27,7 +27,7 @@ We need a role-based authorization system.
 Something based on [cancan](https://github.com/ryanb/cancan) is fine.
 
 ## User Profile
-See also the [profile wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Profile-Notes.md).
+See also the [profile wireframes](https://github.com/ndlib/planning/blob/master/Curate/Wireframes/Sharpie-Profile-Notes.md).
 
 - Add authentication mechanisms
 - Add personal identifiers e.g. ORCID, google plus
@@ -39,7 +39,7 @@ See also the [profile wireframes](https://github.com/ndlib/planning/blob/master/
 - Manage account delegation
 
 ## Dashboard
-See also the [dashboard wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Dashboard-Notes.md).
+See also the [dashboard wireframes](https://github.com/ndlib/planning/blob/master/Curate/Wireframes/Sharpie-Dashboard-Notes.md).
 
 - Submit a Work
 - Search
@@ -137,7 +137,7 @@ There should be a way to edit object syndication preferences:
 - Bags/BagIt export (not a priority)
 
 ## Metadata Dissemination
-See also the [show wireframes](https://github.com/ndlib/planning/blob/master/2013-Fall-DCE-Sprints/Wireframes/Sharpie-Show-Notes.md).
+See also the [show wireframes](https://github.com/ndlib/planning/blob/master/Curate/Wireframes/Sharpie-Show-Notes.md).
 
 Metadata Dissemination encompasses any presentation of an item's metadata.
 Rendering the HTML representation of an item is a common form of Metadata Dissemination.
