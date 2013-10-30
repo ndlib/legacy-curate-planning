@@ -15,7 +15,7 @@ The process will work something like this:
 6. Write code to make the tests work.
 
 1--2 will be present in this repo.  
-3--4 will be documented as milestones and issues in this repo _or_ in individual component github repos depending on the project (panning tasks for [Curate][2] are logged in this repo).  
+3--4 will be documented as milestones and issues in this repo _or_ in individual component github repos depending on the project (planning tasks for [Curate][2] are logged in this repo).  
 5--6 will be contained in the components repos themselves as they are the actual deliverables of this process.
 
 ## Conventions
