@@ -86,7 +86,6 @@ Initially we believe that we will need to address the following:
   - Deposit of Work Types including:
     - Book, Conference Proceedings
   - Delegate Deposit 
-  - Simple metrics available for work deposited in IR
   - Thumbnails for files or records in list views
 - Sprint 5 [10/21-11/1]
   - Deposit of Work Types including:
@@ -104,7 +103,12 @@ Initially we believe that we will need to address the following:
   - Linking of any work, collection, or administrative set to another work, collection, or administrative set
 
 ## Phase 2, Full Launch:
-
+- Organizational profiles with owned collections
+  - Creation of both general collections and administrative sets including managed collections and projects
+- Additional Work Types including:
+    - Audio, Software, Video
+- Linking of any work, collection, or administrative set to another work, collection, or administrative set
+- Metrics available for work deposited and profiles within IR
 - Installable Solution Bundle
 - Break out exemplar types into separate gems
   - Be able to register additional types locally
