@@ -75,27 +75,22 @@ Initially we believe that we will need to address the following:
   - Linking of any work
   - Deposit of Work Types including:
     - Articles, Datasets
-- Sprint 3 [9/23-10/4]
+- Sprint 3 [9/23-10/4] [Complete]
   - DOIs and PURLs for any work
   - Personal Profile Polish
   - Deposit of Work Types including:
     - Images, ETDs
   - Support for basic search of works, collections, people, and projects
   - Collection Access Permissions
-- Sprint 4 [10/7-10/18]
-  - Deposit of Work Types including:
-    - Book, Conference Proceedings
-  - Delegate Deposit 
+- Sprint 4 [10/7-10/18] [Complete]
+    Delegate deposit accounts
+    Get the sandbox environment up and running
+    Improve work creation process
+    Homepage refactoring
+    "text document" work type
+    DOI minting (and applying)
+    Collection and profile viewing & editing
   - Thumbnails for files or records in list views
-- Sprint 5 [10/21-11/1]
-  - Deposit of Work Types including:
-    - Audio, Software, Video (streaming out of scope, do we wait on this?) 
-  - Linking of any work, collection, or administrative set to another work, collection, or administrative set
-- Sprint 6 [ Cleanup  11/4-11/15]
-  - Cleanup of Search Rules for different objects, full text indexing 
-  - UI Cleanup (works, search, overall flow, profile polish)
-  - Cleanup metadata for works including Article, Dataset, Image, ETD
-  - Integrate feedback from early user testing
 
 [Extra Credit - Next up in Sprint 5 if we move quickly]
 - Organizational profiles with owned collections
