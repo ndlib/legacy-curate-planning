@@ -1,3 +1,6 @@
+# DEPRECATED
+This planning process is no longer in active use.
+
 # Planning
 
 These repo contains high-level functional and technical requirements related to the development of public-facing projects.
